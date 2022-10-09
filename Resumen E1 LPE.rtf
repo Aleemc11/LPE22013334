@@ -1,0 +1,434 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica-Bold;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red52\green52\blue52;\red0\green0\blue0;\red52\green52\blue52;
+\red0\green0\blue0;\red47\green231\blue26;\red46\green174\blue187;\red159\green160\blue28;}
+{\*\expandedcolortbl;;\csgray\c26515;\cssrgb\c0\c0\c0;\csgray\c26515;
+\csgray\c0;\cssrgb\c17866\c90514\c12813;\cssrgb\c20199\c73241\c78251;\cssrgb\c68469\c68012\c14211;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14300\viewh12760\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 ANOTACIONES EXAMEN 1 LPE
+\f1\b0\fs18 \
+
+\fs22 \
+
+\f0\b 1. Terminal 2\'aa Clase 23/09/22
+\f1\b0 \
+\
+	1.1. Comandos de terminal utilizados:\
+\
+
+\f2 \cf2 \CocoaLigature0 pwd
+\f1 \cf0 \CocoaLigature1  = saber en que carpeta nos encontramos\
+
+\f2 \cf2 \CocoaLigature0 ls
+\f1 \cf0 \CocoaLigature1  = listado de carpetas del lugar donde donde nos encontramos\
+
+\f2 \cf2 \CocoaLigature0 cd nombre_carpeta
+\f1 \cf0 \CocoaLigature1  = dirigirnos a una carpeta\
+
+\f2 \cf2 \CocoaLigature0 cd ..
+\f1 \cf0 \CocoaLigature1  = volver hacia atr\'e1s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5099\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf2 \CocoaLigature0 cd\\
+\f1 \cf0 \CocoaLigature1  ?\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf2 \CocoaLigature0 touch cp = 
+\f1 \cf3 crear archivo
+\f2 \cf2 \
+nano cp.txt 
+\f1 \cf3 = invocar un notepad
+\f2 \cf2 \
+less 
+\f1 \cf3 = ver el archivo
+\f2 \cf2 \
+cat 
+\f1 \cf3 = lo mismo que less sin mover el rat\'f3n\
+
+\f2 \cf4 \CocoaLigature1 were, which = 
+\f1 \cf3 \CocoaLigature0 encontrar archivo\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf4  
+\f1 \cf3 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \
+	1.2. Comandos git\
+\
+
+\f2 \cf2 \CocoaLigature0 git branch -M main\
+git remote add origin \'93https_enlacegithub_repo\'94\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf2 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 \
+
+\f0\b 2. Terminal 30/09/22 Kaggle
+\f1\b0 \
+\
+
+\f2 \cf2 \CocoaLigature0 pip install kaggle
+\f1 \cf0 \CocoaLigature1  = instalamos kaggle\
+
+\f2 \cf2 \CocoaLigature0 mkdir .kaggle
+\f1  \cf0 \CocoaLigature1 ?  = creamos la carpeta (es invisible)\
+
+\f2 \cf2 \CocoaLigature0 cd .kaggle\cf5  
+\f1 \cf0 \CocoaLigature1 = nos dirigimos a la carpeta\
+
+\f2 \cf2 \CocoaLigature0 ls kaggle.json\cf5  \
+\cf2 less kaggle.json\cf5 \
+\cf2 -h\cf5  
+\f1 \cf0 \CocoaLigature1 = para saber lo que podemos hacer (
+\f2 \cf2 \CocoaLigature0 usage: kaggle datasets [-h]\{list,files,download,create,version,init,metadata,status\}\cf5 )
+\f1 \cf0 \CocoaLigature1 \
+
+\f2 \cf2 \CocoaLigature0 kaggle datasets list
+\f1  \cf0 \CocoaLigature1 = listado de datasets\
+
+\f2 \cf2 \CocoaLigature0 kaggle d list -s \'91crime\'92\cf5  
+\f1 \cf0 \CocoaLigature1 = filtrar listado de dataset por cr\'edmenes\
+\
+
+\f0\b 3. Terminal 05/10/2022 SSH
+\f1\b0 \
+\
+Sirve para transmitir informaci\'f3n del ordenador hasta el repositorio. (Instalar Homebrew)\
+\
+
+\f2 \cf2 \CocoaLigature0 brew install gh\
+gh auth login
+\f1  \cf0 \CocoaLigature1 = aparece lo de abajo\
+	
+\f3\b\fs20 \cf6 \CocoaLigature0 ? \cf5 What account do you want to log into?
+\f2\b0 \cf7  GitHub.com\cf5 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\b \cf6 	? \cf5 What is your preferred protocol for Git operations?
+\f2\b0 \cf7  SSH\cf5 \
+
+\f3\b \cf6 	? \cf5 Generate a new SSH key to add to your GitHub account? 
+\f2\b0 \cf7 Yes\cf5 \
+
+\f3\b \cf6 	? \cf5 Enter a passphrase for your new SSH key (Optional) 
+\f2\b0 \
+
+\f3\b \cf6 	? \cf5 Title for your SSH key: 
+\f2\b0 \cf7 MacPro\cf5 \
+
+\f3\b \cf6 	? \cf5 How would you like to authenticate GitHub CLI?
+\f2\b0 \cf7  Login with a web browser\cf5 \
+	\cf8 !\cf5  First copy your one-time code: 
+\f3\b A908-D03F
+\f2\b0 \
+
+\f3\b 	Press Enter
+\f2\b0  to open github.com in your browser... 
+\fs22 \
+
+\f1 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 dan un c\'f3digo y lo abrimos en git hub para autentificar la cuenta.\
+\
+
+\f0\b 4. Anotaciones del \'93Curso de Git hub\'94
+\f1\b0 \
+\
+
+\f0\b 	4.1. Que es GIT?
+\f1\b0 \
+\
+1. Version control\
+2. Time Machine, volver a cualquier punto atr\'e1s.\
+3. Check points (commits), genera commits mediante funciones.\
+4. Multiverse (branch) permite crear diferentes versiones de un mismo c\'f3digo.\
+5. Sync (merging) sincronizar el c\'f3digo del repo local vs el repo remoto.\
+\
+
+\f0\b 	4.2. Instalar git
+\f1\b0 \
+\
+1. GIT website\
+2. Terminal\
+3. Credenciales (token, usuario y contrase\'f1a y ssh)\
+4. Homebrew\
+\
+
+\f0\b 	4.3. Setting up a project local
+\f1\b0 \
+\
+1. User and mail\
+2. Create a project\
+3. Install GH\
+4. Ssh\
+Abrimos terminal:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\fs20 \cf5 \CocoaLigature0 git config -l #ver credenciales\
+Cd LPE
+\f1\fs22 \cf0 \CocoaLigature1 \
+Git init\
+Nano lee.txt crea archivo .txt\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b \cf0 	4.4. Git enviroments
+\f1\b0 \
+\
+1. Working, metemos archivo\
+2. Staging, esta comprometido\
+3. Commit, subido genera un check point con un hush\
+\
+Git add .\
+Git status\
+Git commit -m \'93Added all files\'94\
+\
+
+\f0\b 	4.5. File states\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 \
+	4.5.1. Tracked\
+\
+1. Modificado\
+2. No modificado \
+3. Stateg listo para hacer un commit\
+\
+	4.5.2. Untracked\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b \cf0 	4.6. Ignore files\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 \
+ Ej: Archivos que no queremos trackear \
+1. Personal info\
+2. Credential\
+3. System files\
+\
+Terminal:\
+
+\f2\fs20 \cf5 \CocoaLigature0 touch .gitignore\
+ls -alh\
+
+\f1\fs22 \cf0 \CocoaLigature1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b \cf0 	4.7. Clear cache
+\f1\b0 \
+1. git rm -r --cached (borrar la cach\'e9)\
+2. git restore --S (recupera el archivo)\
+\
+
+\f0\b 	4.8. Differences
+\f1\b0 \
+\
+1. git diff\
+2. git log --online\
+\
+
+\f0\b 	4.9. Reset
+\f1\b0 \
+\
+1. git reset (volvemos a un punto anterior\
+git log #y salen todos los puntos\
+\
+
+\f0\b 	4.10. Rebase\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0 \cf0 \
+No lo usaremos\
+1. Git switch \
+2. Git branch -D < >\
+\
+Terminal\
+git branch\
+Nano pgr.txt \
+	
+\f2\fs20 \cf5 \CocoaLigature0 def fib(n):\
+        if n in \{1,0\}:\
+                return\
+        else:\
+                return (fib(n-1)+fib(n-2))\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf2 ls\
+Git status\
+Git add .\
+Git commit -m \'93fib function\'94
+\fs20 \cf5 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature1 Y subido\cf5 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf2 git switch -c cristina\
+Git branch\
+Nano prg.txt # a\'f1ade lo de cris\
+Git status\
+Git switch main #\'a0volvemos al principal nuestro\
+Git branch
+\fs20 \cf5 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\b 	
+\f0\fs22 4.11. Git flo 
+\f1\b0 (\cf0 \CocoaLigature1 Pregunta examen)\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2\fs20 \cf5 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf2 1. Features / fix\
+2. Make changes\
+3. Merge\
+4. Delete old branch
+\fs20 \cf5 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f3\b 	
+\f0\fs22 4.12. Git clean
+\f2\b0\fs20 \
+
+\fs22 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf2 git clean -n\
+Git clean -dnf
+\fs20 \cf5 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 	
+\f0\b\fs22 4.13. Working w / GitHub
+\f1\b0\fs20 \
+1. Set up remote\
+2. Push\
+3. 
+\f2 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf2 1. Git push -u origin main \'91https://github.com/Aleemc11/LPE22013334'
+\fs20 \cf5 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3\b 	
+\f0\fs22 \cf0 \CocoaLigature1 4.14. Clona el siguiente repositorio usando ssh\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\b0\fs20 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs22 \cf0 Nos da un repo y una direcci\'f3n \
+\
+Hacemos:\
+Vamos GitHub al repo, donde code utilizamos ssh y lo copiamos y pegamos.\
+\
+#Prueba de subida de archivo en GITHUB
+\fs20 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f2 \cf2 \CocoaLigature0 git clone "https..  .git delrepo\'94.  
+\f1 \cf3 #si no va bien la carpeta
+\f2 \cf2 \
+git init\
+git add .    
+\f1 \cf0 \CocoaLigature1 #si funciona la carpeta\
+
+\f2 \cf2 \CocoaLigature0 git commit -m "message"\
+git push origin main 'https de la pg' / git push -u origin main
+\f1 \cf0 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs22 \cf0 \
+
+\f0\b 5. R Studio
+\f1\b0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf0 \
+	
+\f0\b 5.1. Cargar librer\'edas
+\f1\b0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2 \cf4 \CocoaLigature0 install.packages (c("tidyverse", "httr","janitor")) 
+\f1 \cf0 \CocoaLigature1 #no me suele funcionar\cf4 \CocoaLigature0 \
+
+\f2 install.packages ("tidyverse")\
+install.packages ("httr")\
+install.packages("janitor")\
+library(tidyverse) 
+\f1 \cf0 \CocoaLigature1 # para usarlas
+\f2 \cf4 \CocoaLigature0 \
+library(janitor)\
+library(httr)\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf0 \CocoaLigature1 \
+	
+\f0\b 5.2. Comandos git
+\f1\b0  \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2 \cf4 \CocoaLigature0 git status\
+git init\
+git add\
+git commit -m "message"\
+git push\
+git push -u origin main\
+git branch -M\
+git merge\
+git remote add origin urldelproyecto\
+git clone urldeloquequeremosclonarjiji\
+git fetch
+\f1 \cf0 \CocoaLigature1 \
+\
+	
+\f0\b 5.3. Operaciones b\'e1sicas
+\f1\b0 \
+\
+	5.3.1. Guardar varios elementos de un mismo tipo: 
+\f2 \cf4 clase_lep <- c("marta","emilia","pablo")
+\f1 \cf0 \
+	5.3.2. Guardar varios elementeos de \uc0\u8800  tipo con listas: 
+\f2 \cf4 lista_prueba <- list("marta", 42)\
+	\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1 \cf0 	
+\f0\b 5.4. Obtener datos de internet
+\f1\b0 \
+\
+
+\f2 \cf4 url <- (\'93url\'94)\
+df <- GET("url")
+\f1 \cf0 \
+
+\f2 \cf4 View (df) 
+\f1 \cf0 # visualizamos los datos\
+\
+Crear columnas, etc. en archivo R\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
