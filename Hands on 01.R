@@ -12,8 +12,8 @@
 
 # SHORTCUTS ---------------------------------------------------------------
 
-## cmd + l = clean console
-## cmd + shift + r = new section
+## control + l = clean console
+## control + shift + r = new section
 
 
 # LOADING LIBS ------------------------------------------------------------
@@ -75,8 +75,8 @@ lista_prueba <- list("marta", 42)
 #%>% #ctrl + shift + m con tidyverse
 
 # GETTING DATA FROM INTERNET ----------------------------------------------
-url <- "url"
-GET("url")
+url <- ("url")
+df <- GET("url")
 
 # Ejemplo gasolineras
 url_ <-("https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestres/") 
@@ -129,5 +129,7 @@ ds22013334_34 <- merge(ds22013334_34, df_ccaa_ind_provincias)
 #Visualizamos el resultado
 ds22013334_34%>%view()
 
-
+# Extraemos los datasets
+write.csv(ds22013334_33,"C:\\Users\\aleemc11\\Desktop\\LPE22013334\\ds22013334_33.csv", row.names = FALSE)
+write.csv(ds22013334_34,"C:\\Users\\aleemc11\\Desktop\\LPE22013334\\ds22013334_34.csv", row.names = FALSE)
 
