@@ -56,9 +56,9 @@ df_happy %>%ggplot(aes(sex, fill=happy))+geom_bar(position="fill")
 df_happy %>%  ggplot(aes(finrela, fill=happy))+geom_bar(position = "fill")
 
 
-# Happines and money ------------------------------------------------------
+# Happines and health ------------------------------------------------------
 
-df %>%  ggplot(aes(health, fill=happy))+geom_bar(position = "fill")
+df_happy %>%  ggplot(aes(health, fill=happy))+geom_bar(position = "fill")
 
 
 # Dichotomus Married / Not Variable ---------------------------------------
