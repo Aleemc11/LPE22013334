@@ -34,5 +34,6 @@ df_happy %<>% mutate(happy=fct_rev(happy))
 
 df_happy %>% ggplot() + geom_bar(aes(happy, fill=happy))+
                                    theme(axis.title.x = element_blank(), legend.position = "none")
-
-
+# Frecuency for happy
+df %>% count (happy)
+df %<>% select(happy:health) %>% view()
