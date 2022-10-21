@@ -19,6 +19,8 @@ library (pacman)
 #productplots = graphics and cat var.
 #psych = statatistics.
 #RColorBrewer = painting and colour palette.
+# %<>% se utiliza para crear una columna momentanea y guardar los cambios en ella para luego pasarla a la original
+
 
 # Loas and prepare data ---------------------------------------------------
 
@@ -35,5 +37,36 @@ df_happy %<>% mutate(happy=fct_rev(happy))
 df_happy %>% ggplot() + geom_bar(aes(happy, fill=happy))+
                                    theme(axis.title.x = element_blank(), legend.position = "none")
 # Frecuency for happy
-df %>% count (happy)
-df %<>% select(happy:health) %>% view()
+df_happy %>% count (happy)
+
+# Quitar nulos
+df_happy %<>% select(happy:health) %>% view()
+df_happy %<>% filter(!is.na(happy)) # filtros para saber cuales son nulos y luego vuelves a count y no hay
+df_happy %>% count (happy)
+
+
+
+# Happines and gender -----------------------------------------------------
+
+df_happy %>%ggplot(aes(sex, fill=happy))+geom_bar(position="fill")
+
+
+# Happines and money ------------------------------------------------------
+
+df_happy %>%  ggplot(aes(finrela, fill=happy))+geom_bar(position = "fill")
+
+
+# Happines and money ------------------------------------------------------
+
+df %>%  ggplot(aes(health, fill=happy))+geom_bar(position = "fill")
+
+
+# Dichotomus Married / Not Variable ---------------------------------------
+
+df_happy %>% mutate (married = if_else(marital=="married", "yes","no")) %>% mutate(married=as_factor(married)) %>% view()
+
+# Taerea 
+
+# Traer seteado el R studio con el cluster de la uni
+# Vas a conecciones, en new connection le damos a spark, configuramos en funcion de los datos que nos den.
+
